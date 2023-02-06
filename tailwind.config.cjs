@@ -5,7 +5,35 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    colors: {
+      // ...
+      'cubeGreen': {
+        DEFAULT: '#85c869',
+      },
+      'sideBarGreen': {
+        DEFAULT: '#abd699',
+      },
+      'white': {
+        DEFAULT: '#FFFFFF',
+      },
+      'gold': {
+        DEFAULT: '#d7b72a',
+      },
+      'bgWhite': {
+        DEFAULT: '#F7F7F7',
+      },
+    },
+    extend: {
+      fontFamily: {
+        'Roboto':['Roboto', 'sans-serif'],
+      }
+    },
   },
-  plugins: [],
+  plugins: [
+      function ({ addVariant }) {
+          addVariant('child', '& > *');
+          addVariant('child-hover', '& > *:hover');
+      }
+  ],
+  mode: 'jit',
 }
