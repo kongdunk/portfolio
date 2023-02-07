@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="overflow-hidden bg-bgWhite">
       <nav className="group bg-sideBarGreen h-screen text-white w-28 hover:w-52 fixed top-0 left-0 duration-300 z-1">
-        <div className="bg-cubeBlue w-full h-24 flex justify-center items-center">
+        <div className="bg-cubeBlue w-full h-28 flex justify-center items-center">
           <motion.p className=" text-5xl ">Dk</motion.p>
         </div>
         <ul className="flex flex-col justify-between items-center mt-28 h-2/5">
@@ -134,7 +134,7 @@ function App() {
             <div className="flex w-1/2 justify-center items-center ">
               <img
                 className="rounded-full w-80 h-80"
-                src="/doge.jpg"
+                src="/profilePicture.jpg"
                 alt="image of a cute dog with a hat and a monocle"
               />
             </div>
@@ -147,10 +147,13 @@ function App() {
                 {" "}
                 daesan.{" "}
               </h1>
-              <p className="w text-l mt-3 mb-3 mr-52 font-Roboto font-medium">
+              <p className="w text-lg mt-3 mb-3 mr-52 font-Roboto font-medium">
                 {" "}
-                I'm Daesan, a cool Front-End Web Developer I like rice and
-                basketball and mangos. I like development 💻 and stuff...{" "}
+                A{" "}
+                <span className=" text-cubeBlue font-semibold">
+                  Front-End Web Developer
+                </span>{" "}
+                that has a passion for development and problem solving 💻
               </p>
               <div className="flex justify-between mr-52 mt-5">
                 <a
@@ -192,12 +195,15 @@ function App() {
             {" "}
             ABOUT ME{" "}
           </h2>
-          <p className="text-xl p-10 rounded-3xl bg-white font-Roboto">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of type
-            and scrambled it to make a type specimen book. Lorem Ipsum is simply
-            dummy text of the printing and typesetting industry.
+          <p className="text-xl p-10 rounded-3xl bg-white font-Roboto leading-9">
+            I'm an aspiring frontend developer with a passion in learning. My 15
+            years of being a PC gamer has given me a strong foundation to become
+            a computer wizard. I'm currently a student at BCIT taking the
+            Digital Design and Development program. This program has taught me a
+            lot about UX Design and frontend development. But my interest lean
+            towards frontend developemnt as I am passionate about coding and
+            problem solving. As I come close to finishing my education, I'm
+            excited to start my journey as a frontend developer.
           </p>
         </div>
 
@@ -276,19 +282,22 @@ function App() {
                   {" "}
                   Pathfinders
                 </h3>
-                <h2 className="font-Roboto text-xl">
+                <h2 className="font-Roboto text-xl leading-10">
                   {" "}
-                  Technologies Used: NEXT, Storybook,{" "}
+                  Technologies Used:{" "}
+                  <span className=" text-cubeBlue font-semibold leading-10 mb-2">
+                    NEXT, Storybook
+                  </span>{" "}
                 </h2>
                 <ul>
-                  <li className="font-Roboto text-lg list-disc">
+                  <li className="font-Roboto text-base list-disc list-outside mb-2 ml-4">
                     Web app that helps people with accessibility issues access
                     documents online by adjusting text settings
                   </li>
-                  <li className="font-Roboto text-lg list-disc">
+                  <li className="font-Roboto text-base list-disc list-outside mb-2 ml-4">
                     Built with hooks and functional components
                   </li>
-                  <li className="font-Roboto text-lg list-disc">
+                  <li className="font-Roboto text-base list-disc list-outside mb-2 ml-4">
                     Used Storybook for building UI components
                   </li>
                 </ul>
@@ -322,15 +331,19 @@ function App() {
                   {" "}
                   Bee Quiz App
                 </h3>
-                <h2 className="font-Roboto text-xl">
+                <h2 className="font-Roboto text-xl leading-10">
                   {" "}
-                  Technologies Used: NEXT, Next Router{" "}
+                  Technologies Used:
+                  <span className=" text-cubeBlue font-semibold">
+                    {" "}
+                    NEXT, Next Router{" "}
+                  </span>
                 </h2>
                 <ul>
-                  <li className="font-Roboto text-lg list-disc">
+                  <li className="font-Roboto text-base list-disc list-outside mb-2 ml-4">
                     Interactive Quiz App about Bees
                   </li>
-                  <li className="font-Roboto text-lg list-disc">
+                  <li className="font-Roboto text-base list-disc list-outside mb-2 ml-4">
                     Used Next Router to create client-side route transitions
                     between pages
                   </li>
@@ -365,15 +378,18 @@ function App() {
                   {" "}
                   Black Jack Card Game
                 </h3>
-                <h2 className="font-Roboto text-xl">
+                <h2 className="font-Roboto text-xl leading-10">
                   {" "}
-                  Technologies Used: React, REST API{" "}
+                  Technologies Used:{" "}
+                  <span className=" text-cubeBlue font-semibold">
+                    React, REST API
+                  </span>{" "}
                 </h2>
                 <ul>
-                  <li className="font-Roboto text-lg list-disc">
+                  <li className="font-Roboto text-base list-disc list-outside mb-2 ml-4">
                     Built with React hooks
                   </li>
-                  <li className="font-Roboto text-lg list-disc">
+                  <li className="font-Roboto text-base list-disc list-outside mb-2 ml-4">
                     Cards data pulled from Deck of Cards API{" "}
                   </li>
                 </ul>
