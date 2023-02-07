@@ -220,43 +220,43 @@ function App() {
               whileHover={{ scale: 1.2 }}
               className="flex flex-col justify-center items-center w-20 h-20 md:w-28 md:h-28 border-2 rounded-2xl border-bgWhite m-3"
             >
-              <img className="w-16" src="html.svg" />
-              <h3 className="text-base"> HTML </h3>
+              <img className="w-8 md:w-16" src="html.svg" />
+              <h3 className="text-sm md:text-base"> HTML </h3>
             </motion.div>
             <motion.div
               whileHover={{ scale: 1.2 }}
               className="flex flex-col justify-center items-center w-20 h-20 md:w-28 md:h-28 border-2 rounded-2xl border-bgWhite m-3"
             >
-              <img className="w-16" src="css.svg" />
-              <h3 className="text-base"> CSS </h3>
+              <img className="w-8 md:w-16" src="css.svg" />
+              <h3 className="text-sm md:text-base"> CSS </h3>
             </motion.div>
             <motion.div
               whileHover={{ scale: 1.2 }}
               className="flex flex-col justify-center items-center w-20 h-20 md:w-28 md:h-28 border-2 rounded-2xl border-bgWhite m-3"
             >
-              <img className="w-16" src="javascript.svg" />
-              <h3 className="text-base"> Javascript </h3>
+              <img className="w-8 md:w-16" src="javascript.svg" />
+              <h3 className="text-sm md:text-base"> Javascript </h3>
             </motion.div>
             <motion.div
               whileHover={{ scale: 1.2 }}
               className="flex flex-col justify-center items-center w-20 h-20 md:w-28 md:h-28 border-2 rounded-2xl border-bgWhite m-3"
             >
-              <img className="w-16" src="react.svg" />
-              <h3 className="text-base"> React </h3>
+              <img className="w-8 md:w-16" src="react.svg" />
+              <h3 className="text-sm md:text-base"> React </h3>
             </motion.div>
             <motion.div
               whileHover={{ scale: 1.2 }}
               className="flex flex-col justify-center items-center w-20 h-20 md:w-28 md:h-28 border-2 rounded-2xl border-bgWhite m-3"
             >
-              <img className="w-16" src="next.svg" />
-              <h3 className="text-base"> Next JS </h3>
+              <img className="w-8 md:w-16" src="next.svg" />
+              <h3 className="text-sm md:text-base"> Next JS </h3>
             </motion.div>
             <motion.div
               whileHover={{ scale: 1.2 }}
               className="flex flex-col justify-center items-center w-20 h-20 md:w-28 md:h-28 border-2 rounded-2xl border-bgWhite m-3"
             >
-              <img className="w-16" src="tailwind.svg" />
-              <h3 className="text-base"> TailwindCSS </h3>
+              <img className="w-8 md:w-16" src="tailwind.svg" />
+              <h3 className="text-sm md:text-base"> TailwindCSS </h3>
             </motion.div>
           </div>
         </div>
@@ -422,9 +422,9 @@ function App() {
             {" "}
             Contact{" "}
           </h2>
-          <div className="flex justify-evenly text-2xl p-10 rounded-3xl bg-white flex-wrap min-w-full">
+          <div className="flex flex-col md:flex-row justify-evenly items-center text-2xl p-10 rounded-3xl bg-white flex-wrap min-w-full">
             {" "}
-            <div className="flex flex-col justify-center items-center w-5/12 mt-8 border-2 rounded-2xl border-bgWhite p-16">
+            <div className="flex flex-col justify-center items-center w-full md:w-5/12 mt-8 border-2 rounded-2xl border-bgWhite p-16">
               {" "}
               <motion.a
                 href="https://www.linkedin.com/in/daesan-kim/"
@@ -440,7 +440,7 @@ function App() {
                 Connect with me
               </h4>
             </div>
-            <div className="flex flex-col justify-center items-center w-5/12 mt-8 border-2 rounded-2xl border-bgWhite p-16">
+            <div className="flex flex-col justify-center items-center w-full md:w-5/12 mt-8 border-2 rounded-2xl border-bgWhite p-16">
               {" "}
               <motion.div
                 whileHover={{ scale: 1.2 }}
