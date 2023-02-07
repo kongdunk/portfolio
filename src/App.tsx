@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 function App() {
   return (
     <div className="overflow-hidden bg-bgWhite">
-      <nav className="group bg-sideBarGreen h-screen text-white w-28 hover:w-52 fixed top-0 left-0 duration-300 z-1">
+      <nav className="group bg-sideBarGreen h-screen text-white w-28 hover:w-52 fixed top-0 left-0 duration-300 z-1 hidden md:inline">
         <div className="bg-cubeBlue w-full h-28 flex justify-center items-center">
           <motion.p className=" text-5xl ">Dk</motion.p>
         </div>
@@ -128,26 +128,26 @@ function App() {
           </li>
         </ul>
       </nav>
-      <div className="ml-28">
+      <div className="ml-0 md:ml-28">
         <div id="home" className="flex justify-center w-full h-screen">
-          <div className="flex justify-center items-center w-full">
+          <div className="flex flex-col md:flex-row justify-center items-center w-full">
             <div className="flex w-1/2 justify-center items-center ">
               <img
-                className="rounded-full w-80 h-80"
+                className="rounded-full w-50 h-50 md:w-80 md:h-80"
                 src="/profilePicture.jpg"
                 alt="image of a cute dog with a hat and a monocle"
               />
             </div>
-            <div className="flex flex-col w-1/2 justify-center">
+            <div className="flex flex-col w-1/2 justify-center mt-5 md:mt-0">
               <h2 className="text-xl font-semibold font-Roboto">
                 {" "}
                 HI THERE 👋 I'M{" "}
               </h2>
-              <h1 className="text-8xl mt-3 mb-3 font-Roboto font-extrabold">
+              <h1 className="text-6xl md:text-8xl mt-3 mb-3 font-Roboto font-extrabold">
                 {" "}
                 daesan.{" "}
               </h1>
-              <p className="w text-lg mt-3 mb-3 mr-52 font-Roboto font-medium">
+              <p className="text-lg mt-3 mb-3 m-0 md:mr-52 font-Roboto font-medium">
                 {" "}
                 A{" "}
                 <span className=" text-cubeBlue font-semibold">
@@ -155,7 +155,7 @@ function App() {
                 </span>{" "}
                 that has a passion for development and problem solving 💻
               </p>
-              <div className="flex justify-between mr-52 mt-5">
+              <div className="flex justify-center md:justify-between mr-0 md:mr-52 mt-5">
                 <a
                   className="flex justify-center items-center bg-sideBarGreen px-9 py-2 text-white rounded-3xl ml-5 font-semibold"
                   href="/src/data/resume_daesan.pdf"
@@ -164,7 +164,7 @@ function App() {
                   {" "}
                   Resume{" "}
                 </a>
-                <div className="flex items-center w-full justify-end mr-20">
+                <div className="flex items-center w-full justify-end mr-0 md:mr-20">
                   <motion.a
                     whileHover={{ scale: 1.2 }}
                     href="https://www.linkedin.com/in/daesan-kim/"
@@ -189,13 +189,13 @@ function App() {
 
         <div
           id="about"
-          className="flex flex-col justify-center items-center  w-full p-20"
+          className="flex flex-col justify-center items-center  w-full p-10 md:p-20"
         >
           <h2 className="flex w-full text-2xl mb-4 font-Roboto font-semibold">
             {" "}
             ABOUT ME{" "}
           </h2>
-          <p className="text-xl p-10 rounded-3xl bg-white font-Roboto leading-9">
+          <p className=" text-base md:text-xl p-10 rounded-3xl bg-white font-Roboto leading-9">
             I'm an aspiring frontend developer with a passion in learning. My 15
             years of being a PC gamer has given me a strong foundation to become
             a computer wizard. I'm currently a student at BCIT taking the
@@ -209,7 +209,7 @@ function App() {
 
         <div
           id="skills"
-          className="flex flex-col justify-center items-center w-full p-20"
+          className="flex flex-col justify-center items-center w-full p-10 md:p-20"
         >
           <h2 className="flex w-full text-2xl mb-4 font-Roboto font-semibold">
             {" "}
@@ -218,42 +218,42 @@ function App() {
           <div className="flex justify-between text-2xl p-10 rounded-3xl bg-white flex-wrap min-w-full">
             <motion.div
               whileHover={{ scale: 1.2 }}
-              className="flex flex-col justify-center items-center w-28 h-28 border-2 rounded-2xl border-bgWhite m-3"
+              className="flex flex-col justify-center items-center w-20 h-20 md:w-28 md:h-28 border-2 rounded-2xl border-bgWhite m-3"
             >
               <img className="w-16" src="html.svg" />
               <h3 className="text-base"> HTML </h3>
             </motion.div>
             <motion.div
               whileHover={{ scale: 1.2 }}
-              className="flex flex-col justify-center items-center w-28 h-28 border-2 rounded-2xl border-bgWhite m-3"
+              className="flex flex-col justify-center items-center w-20 h-20 md:w-28 md:h-28 border-2 rounded-2xl border-bgWhite m-3"
             >
               <img className="w-16" src="css.svg" />
               <h3 className="text-base"> CSS </h3>
             </motion.div>
             <motion.div
               whileHover={{ scale: 1.2 }}
-              className="flex flex-col justify-center items-center w-28 h-28 border-2 rounded-2xl border-bgWhite m-3"
+              className="flex flex-col justify-center items-center w-20 h-20 md:w-28 md:h-28 border-2 rounded-2xl border-bgWhite m-3"
             >
               <img className="w-16" src="javascript.svg" />
               <h3 className="text-base"> Javascript </h3>
             </motion.div>
             <motion.div
               whileHover={{ scale: 1.2 }}
-              className="flex flex-col justify-center items-center w-28 h-28 border-2 rounded-2xl border-bgWhite m-3"
+              className="flex flex-col justify-center items-center w-20 h-20 md:w-28 md:h-28 border-2 rounded-2xl border-bgWhite m-3"
             >
               <img className="w-16" src="react.svg" />
               <h3 className="text-base"> React </h3>
             </motion.div>
             <motion.div
               whileHover={{ scale: 1.2 }}
-              className="flex flex-col justify-center items-center w-28 h-28 border-2 rounded-2xl border-bgWhite m-3"
+              className="flex flex-col justify-center items-center w-20 h-20 md:w-28 md:h-28 border-2 rounded-2xl border-bgWhite m-3"
             >
               <img className="w-16" src="next.svg" />
               <h3 className="text-base"> Next JS </h3>
             </motion.div>
             <motion.div
               whileHover={{ scale: 1.2 }}
-              className="flex flex-col justify-center items-center w-28 h-28 border-2 rounded-2xl border-bgWhite m-3"
+              className="flex flex-col justify-center items-center w-20 h-20 md:w-28 md:h-28 border-2 rounded-2xl border-bgWhite m-3"
             >
               <img className="w-16" src="tailwind.svg" />
               <h3 className="text-base"> TailwindCSS </h3>
@@ -263,21 +263,21 @@ function App() {
 
         <div
           id="work"
-          className="flex flex-col justify-center items-center w-full p-20"
+          className="flex flex-col justify-center items-center w-full p-10 md:p-20"
         >
           <h2 className="flex w-full text-2xl mb-4 font-Roboto font-semibold">
             {" "}
             PROJECTS{" "}
           </h2>
           <div className="flex justify-center text-2xl p-10 rounded-3xl bg-white flex-wrap min-w-full">
-            <div className="flex justify-around w-11/12 mt-8 border-2 rounded-2xl border-bgWhite p-16">
+            <div className="flex flex-col md:flex-row justify-between items-center w-11/12 mt-8 border-2 rounded-2xl border-bgWhite p-3 md:p-8">
               <img
-                className=" flex rounded-lg w-76 h-44"
+                className="flex rounded-lg md:w-2/5"
                 src="pathfinders.png"
                 alt=""
                 srcSet=""
               />
-              <div className=" w-1/2 ">
+              <div className=" w-full md:w-1/2 mt-5 ">
                 <h3 className="font-Roboto text-2xl font-semibold">
                   {" "}
                   Pathfinders
@@ -319,14 +319,14 @@ function App() {
                 </div>
               </div>
             </div>
-            <div className="flex justify-around w-11/12 mt-8 border-2 rounded-2xl border-bgWhite p-16">
+            <div className="flex flex-col md:flex-row justify-between items-center w-11/12 mt-8 border-2 rounded-2xl border-bgWhite p-3 md:p-8">
               <img
-                className="rounded-lg w-76 h-44"
+                className="flex rounded-lg md:w-2/5"
                 src="beequizapp.png"
                 alt=""
                 srcSet=""
               />
-              <div className=" w-1/2 ">
+              <div className=" w-full md:w-1/2 mt-5 ">
                 <h3 className="font-Roboto text-2xl font-semibold">
                   {" "}
                   Bee Quiz App
@@ -366,14 +366,14 @@ function App() {
                 </div>
               </div>
             </div>
-            <div className="flex justify-around w-11/12 mt-8 mb-8 border-2 rounded-2xl border-bgWhite p-16">
+            <div className="flex flex-col md:flex-row justify-between items-center w-11/12 mt-8 border-2 rounded-2xl border-bgWhite p-3 md:p-8">
               <img
-                className="rounded-lg w-76 h-44"
+                className="flex rounded-lg md:w-2/5"
                 src="blackjack.png"
                 alt=""
                 srcSet=""
               />
-              <div className=" w-1/2 ">
+              <div className="w-full md:w-1/2 mt-5">
                 <h3 className="font-Roboto text-2xl font-semibold ">
                   {" "}
                   Black Jack Card Game
@@ -416,7 +416,7 @@ function App() {
 
         <div
           id="contact"
-          className="flex flex-col justify-center items-center w-full p-20"
+          className="flex flex-col justify-center items-center w-full p-10 md:p-20"
         >
           <h2 className="flex w-full text-2xl mb-4 font-Roboto font-semibold">
             {" "}
@@ -435,7 +435,10 @@ function App() {
                 <img className="w-16" src="linkedin.svg" />
                 <h3 className="text-base"> LinkedIn </h3>
               </motion.a>
-              <h4 className="font-Roboto text-lg"> Connect with me</h4>
+              <h4 className="font-Roboto text-sm md:text-lg">
+                {" "}
+                Connect with me
+              </h4>
             </div>
             <div className="flex flex-col justify-center items-center w-5/12 mt-8 border-2 rounded-2xl border-bgWhite p-16">
               {" "}
@@ -446,7 +449,10 @@ function App() {
                 <img className="w-16" src="email.svg" />
                 <h3 className="text-base"> Email </h3>
               </motion.div>
-              <h4 className="font-Roboto text-lg"> daesan98@gmail.com </h4>
+              <h4 className="font-Roboto text-sm md:text-lg">
+                {" "}
+                daesan98@gmail.com{" "}
+              </h4>
             </div>
           </div>
         </div>
