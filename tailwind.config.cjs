@@ -8,10 +8,10 @@ module.exports = {
     colors: {
       // ...
       'cubeGreen': {
-        DEFAULT: '#85c869',
+        DEFAULT: '#005475',
       },
       'sideBarGreen': {
-        DEFAULT: '#abd699',
+        DEFAULT: '#007CAD',
       },
       'white': {
         DEFAULT: '#FFFFFF',

@@ -12,12 +12,11 @@ function App() {
         </div>
         <ul className="flex flex-col justify-between items-center mt-28 h-2/5">
           <li>
-            <a
-              href="#home"
-              className="flex justify-between items-center m-3 hover"
-            >
+            <a href="#home" className="flex justify-between items-center m-3">
               <img className="w-6 h-6" src="home.svg" />
-              <p className="hidden group-hover:inline pr-10">Home </p>
+              <p className="hidden group-hover:inline pr-10 font-semibold">
+                Home{" "}
+              </p>
             </a>
           </li>
           <li>
@@ -26,7 +25,9 @@ function App() {
               className="flex justify-between items-center m-3 hover"
             >
               <img className="w-6 h-6" src="about.svg" />
-              <p className="hidden group-hover:inline pr-10">About </p>
+              <p className="hidden group-hover:inline pr-10 font-semibold">
+                About{" "}
+              </p>
             </a>
           </li>
           <li>
@@ -35,7 +36,9 @@ function App() {
               className="flex justify-between items-center m-3 hover"
             >
               <img className="w-6 h-6" src="skills.svg" />
-              <p className="hidden group-hover:inline pr-10">Skills </p>
+              <p className="hidden group-hover:inline pr-10 font-semibold">
+                Skills{" "}
+              </p>
             </a>
           </li>
           <li>
@@ -44,7 +47,9 @@ function App() {
               className="flex justify-between items-center m-3 hover"
             >
               <img className="w-6 h-6" src="work.svg" />
-              <p className="hidden group-hover:inline pr-10">Work </p>
+              <p className="hidden group-hover:inline pr-10 font-semibold">
+                Work{" "}
+              </p>
             </a>
           </li>
           <li>
@@ -53,7 +58,9 @@ function App() {
               className="flex justify-between items-center m-3 hover"
             >
               <img className="w-6 h-6" src="contact.svg" />
-              <p className="hidden group-hover:inline pr-10">Contact </p>
+              <p className="hidden group-hover:inline pr-10 font-semibold">
+                Contact{" "}
+              </p>
             </a>
           </li>
         </ul>
@@ -83,7 +90,11 @@ function App() {
                 basketball and mangos. I like development 💻 and stuff...{" "}
               </p>
               <div className="flex justify-between mr-52 mt-5">
-                <a className="flex justify-center items-center bg-sideBarGreen px-9 py-2 text-white rounded-3xl ml-5">
+                <a
+                  className="flex justify-center items-center bg-sideBarGreen px-9 py-2 text-white rounded-3xl ml-5 font-semibold"
+                  href="/src/data/resume_daesan.pdf"
+                  download
+                >
                   {" "}
                   Resume{" "}
                 </a>
