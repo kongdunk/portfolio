@@ -7,7 +7,7 @@ module.exports = {
   theme: {
     colors: {
       // ...
-      'cubeGreen': {
+      'cubeBlue': {
         DEFAULT: '#005475',
       },
       'sideBarGreen': {

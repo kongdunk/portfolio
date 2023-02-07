@@ -7,60 +7,123 @@ function App() {
   return (
     <div className="overflow-hidden bg-bgWhite">
       <nav className="group bg-sideBarGreen h-screen text-white w-28 hover:w-52 fixed top-0 left-0 duration-300 z-1">
-        <div className="bg-cubeGreen w-full h-24 flex justify-center items-center">
-          <p className=" text-5xl ">Dk</p>
+        <div className="bg-cubeBlue w-full h-24 flex justify-center items-center">
+          <motion.p className=" text-5xl ">Dk</motion.p>
         </div>
         <ul className="flex flex-col justify-between items-center mt-28 h-2/5">
           <li>
-            <a href="#home" className="flex justify-between items-center m-3">
-              <img className="w-6 h-6" src="home.svg" />
-              <p className="hidden group-hover:inline pr-10 font-semibold">
-                Home{" "}
-              </p>
+            <a
+              href="#home"
+              className="flex justify-center items-center hover w-36 h-12 hover:bg-cubeBlue rounded-lg duration-100"
+            >
+              <motion.img
+                whileHover={{ scale: 1.2, rotate: 180 }}
+                className="w-6 h-6"
+                src="home.svg"
+              />
+              <motion.p
+                whileHover={{ scale: 1.2 }}
+                whileTap={{
+                  scale: 1.1,
+                  rotate: -30,
+                  borderRadius: "100%",
+                }}
+                className="hidden group-hover:inline font-semibold ml-3"
+              >
+                HOME{" "}
+              </motion.p>
             </a>
           </li>
           <li>
             <a
               href="#about"
-              className="flex justify-between items-center m-3 hover"
+              className="flex justify-center items-center hover w-36 h-12 hover:bg-cubeBlue rounded-lg duration-100"
             >
-              <img className="w-6 h-6" src="about.svg" />
-              <p className="hidden group-hover:inline pr-10 font-semibold">
-                About{" "}
-              </p>
+              <motion.img
+                whileHover={{ scale: 1.2, rotate: 180 }}
+                className="w-6 h-6"
+                src="about.svg"
+              />
+              <motion.p
+                whileHover={{ scale: 1.2 }}
+                whileTap={{
+                  scale: 1.1,
+                  rotate: -30,
+                  borderRadius: "100%",
+                }}
+                className="hidden group-hover:inline font-semibold ml-3"
+              >
+                ABOUT{" "}
+              </motion.p>
             </a>
           </li>
           <li>
             <a
               href="#skills"
-              className="flex justify-between items-center m-3 hover"
+              className="flex justify-center items-center hover w-36 h-12 hover:bg-cubeBlue rounded-lg duration-100"
             >
-              <img className="w-6 h-6" src="skills.svg" />
-              <p className="hidden group-hover:inline pr-10 font-semibold">
-                Skills{" "}
-              </p>
+              <motion.img
+                whileHover={{ scale: 1.2, rotate: 180 }}
+                className="w-6 h-6"
+                src="skills.svg"
+              />
+              <motion.p
+                whileHover={{ scale: 1.2 }}
+                whileTap={{
+                  scale: 1.1,
+                  rotate: -30,
+                  borderRadius: "100%",
+                }}
+                className="hidden group-hover:inline font-semibold ml-3"
+              >
+                SKILLS{" "}
+              </motion.p>
             </a>
           </li>
           <li>
             <a
               href="#work"
-              className="flex justify-between items-center m-3 hover"
+              className="flex justify-center items-center hover w-36 h-12 hover:bg-cubeBlue rounded-lg duration-100"
             >
-              <img className="w-6 h-6" src="work.svg" />
-              <p className="hidden group-hover:inline pr-10 font-semibold">
-                Work{" "}
-              </p>
+              <motion.img
+                whileHover={{ scale: 1.2, rotate: 180 }}
+                className="w-6 h-6"
+                src="work.svg"
+              />
+              <motion.p
+                whileHover={{ scale: 1.2 }}
+                whileTap={{
+                  scale: 1.1,
+                  rotate: -30,
+                  borderRadius: "100%",
+                }}
+                className="hidden group-hover:inline font-semibold ml-3"
+              >
+                WORK{" "}
+              </motion.p>
             </a>
           </li>
           <li>
             <a
               href="#contact"
-              className="flex justify-between items-center m-3 hover"
+              className="flex justify-center items-center hover w-36 h-12 hover:bg-cubeBlue rounded-lg duration-100"
             >
-              <img className="w-6 h-6" src="contact.svg" />
-              <p className="hidden group-hover:inline pr-10 font-semibold">
-                Contact{" "}
-              </p>
+              <motion.img
+                whileHover={{ scale: 1.2, rotate: 180 }}
+                className="w-6 h-6"
+                src="contact.svg"
+              />
+              <motion.p
+                whileHover={{ scale: 1.2 }}
+                whileTap={{
+                  scale: 1.1,
+                  rotate: -30,
+                  borderRadius: "100%",
+                }}
+                className="hidden group-hover:inline font-semibold ml-3"
+              >
+                CONTACT{" "}
+              </motion.p>
             </a>
           </li>
         </ul>
@@ -93,26 +156,28 @@ function App() {
                 <a
                   className="flex justify-center items-center bg-sideBarGreen px-9 py-2 text-white rounded-3xl ml-5 font-semibold"
                   href="/src/data/resume_daesan.pdf"
-                  download
+                  target="_blank"
                 >
                   {" "}
                   Resume{" "}
                 </a>
                 <div className="flex items-center w-full justify-end mr-20">
-                  <a
+                  <motion.a
+                    whileHover={{ scale: 1.2 }}
                     href="https://www.linkedin.com/in/daesan-kim/"
                     target="_blank"
                     className="flex flex-col justify-center items-center w-12 h-12 border-2 rounded-xl border-bgWhite bg-white mr-3"
                   >
                     <img className="w-8" src="linkedin.svg" />
-                  </a>
-                  <a
+                  </motion.a>
+                  <motion.a
+                    whileHover={{ scale: 1.2 }}
                     href="https://github.com/kongdunk"
                     target="_blank"
                     className="flex flex-col justify-center items-center w-12 h-12 border-2 rounded-xl border-bgWhite bg-white"
                   >
                     <img className="w-6" src="github.svg" />
-                  </a>
+                  </motion.a>
                 </div>
               </div>
             </div>
@@ -145,30 +210,48 @@ function App() {
             SKILLS{" "}
           </h2>
           <div className="flex justify-between text-2xl p-10 rounded-3xl bg-white flex-wrap min-w-full">
-            <div className="flex flex-col justify-center items-center w-28 h-28 border-2 rounded-2xl border-bgWhite m-3">
+            <motion.div
+              whileHover={{ scale: 1.2 }}
+              className="flex flex-col justify-center items-center w-28 h-28 border-2 rounded-2xl border-bgWhite m-3"
+            >
               <img className="w-16" src="html.svg" />
               <h3 className="text-base"> HTML </h3>
-            </div>
-            <div className="flex flex-col justify-center items-center w-28 h-28 border-2 rounded-2xl border-bgWhite m-3">
+            </motion.div>
+            <motion.div
+              whileHover={{ scale: 1.2 }}
+              className="flex flex-col justify-center items-center w-28 h-28 border-2 rounded-2xl border-bgWhite m-3"
+            >
               <img className="w-16" src="css.svg" />
               <h3 className="text-base"> CSS </h3>
-            </div>
-            <div className="flex flex-col justify-center items-center w-28 h-28 border-2 rounded-2xl border-bgWhite m-3">
+            </motion.div>
+            <motion.div
+              whileHover={{ scale: 1.2 }}
+              className="flex flex-col justify-center items-center w-28 h-28 border-2 rounded-2xl border-bgWhite m-3"
+            >
               <img className="w-16" src="javascript.svg" />
               <h3 className="text-base"> Javascript </h3>
-            </div>
-            <div className="flex flex-col justify-center items-center w-28 h-28 border-2 rounded-2xl border-bgWhite m-3">
+            </motion.div>
+            <motion.div
+              whileHover={{ scale: 1.2 }}
+              className="flex flex-col justify-center items-center w-28 h-28 border-2 rounded-2xl border-bgWhite m-3"
+            >
               <img className="w-16" src="react.svg" />
               <h3 className="text-base"> React </h3>
-            </div>
-            <div className="flex flex-col justify-center items-center w-28 h-28 border-2 rounded-2xl border-bgWhite m-3">
+            </motion.div>
+            <motion.div
+              whileHover={{ scale: 1.2 }}
+              className="flex flex-col justify-center items-center w-28 h-28 border-2 rounded-2xl border-bgWhite m-3"
+            >
               <img className="w-16" src="next.svg" />
               <h3 className="text-base"> Next JS </h3>
-            </div>
-            <div className="flex flex-col justify-center items-center w-28 h-28 border-2 rounded-2xl border-bgWhite m-3">
+            </motion.div>
+            <motion.div
+              whileHover={{ scale: 1.2 }}
+              className="flex flex-col justify-center items-center w-28 h-28 border-2 rounded-2xl border-bgWhite m-3"
+            >
               <img className="w-16" src="tailwind.svg" />
               <h3 className="text-base"> TailwindCSS </h3>
-            </div>
+            </motion.div>
           </div>
         </div>
 
@@ -327,22 +410,26 @@ function App() {
             {" "}
             <div className="flex flex-col justify-center items-center w-5/12 mt-8 border-2 rounded-2xl border-bgWhite p-16">
               {" "}
-              <a
+              <motion.a
                 href="https://www.linkedin.com/in/daesan-kim/"
                 target="_blank"
+                whileHover={{ scale: 1.2 }}
                 className="flex flex-col justify-center items-center w-28 h-28 border-2 rounded-2xl border-bgWhite m-3"
               >
                 <img className="w-16" src="linkedin.svg" />
                 <h3 className="text-base"> LinkedIn </h3>
-              </a>
+              </motion.a>
               <h4 className="font-Roboto text-lg"> Connect with me</h4>
             </div>
             <div className="flex flex-col justify-center items-center w-5/12 mt-8 border-2 rounded-2xl border-bgWhite p-16">
               {" "}
-              <div className="flex flex-col justify-center items-center w-28 h-28 border-2 rounded-2xl border-bgWhite m-3">
+              <motion.div
+                whileHover={{ scale: 1.2 }}
+                className="flex flex-col justify-center items-center w-28 h-28 border-2 rounded-2xl border-bgWhite m-3"
+              >
                 <img className="w-16" src="email.svg" />
                 <h3 className="text-base"> Email </h3>
-              </div>
+              </motion.div>
               <h4 className="font-Roboto text-lg"> daesan98@gmail.com </h4>
             </div>
           </div>
