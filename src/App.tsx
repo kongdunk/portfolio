@@ -158,7 +158,7 @@ function App() {
               <div className="flex justify-center md:justify-between mr-0 md:mr-52 mt-5">
                 <a
                   className="flex justify-center items-center bg-sideBarGreen px-9 py-2 text-white rounded-3xl ml-5 font-semibold"
-                  href="/src/data/resume_daesan.pdf"
+                  href="/resume_daesan.pdf"
                   target="_blank"
                 >
                   {" "}
