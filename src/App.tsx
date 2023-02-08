@@ -6,15 +6,15 @@ import { motion } from "framer-motion";
 function App() {
   return (
     <div className="overflow-hidden bg-bgWhite">
-      <nav className="group bg-sideBarGreen h-screen text-white w-28 hover:w-52 fixed top-0 left-0 duration-300 z-1 hidden md:inline">
-        <div className="bg-cubeBlue w-full h-28 flex justify-center items-center">
+      <nav className="group bg-sideBarGreen h-1/7 pb-4 md:h-screen text-white w-full md:w-28 md:hover:w-52 fixed top-0 left-0 duration-300 z-1 md:inline">
+        <div className="bg-cubeBlue w-full h-28 hidden md:flex justify-center items-center">
           <motion.p className=" text-5xl ">Dk</motion.p>
         </div>
-        <ul className="flex flex-col justify-between items-center mt-28 h-2/5">
+        <ul className="flex md:flex-col justify-evenly md:justify-between items-center mt-5 md:mt-28 h-2/5">
           <li>
             <a
               href="#home"
-              className="flex justify-center items-center hover w-36 h-12 hover:bg-cubeBlue rounded-lg duration-100"
+              className="flex md:flex-row flex-col justify-center items-center hover w-20 md:w-36 h-16 hover:bg-cubeBlue rounded-lg duration-100"
             >
               <motion.img
                 whileHover={{ scale: 1.2, rotate: 180 }}
@@ -28,7 +28,7 @@ function App() {
                   rotate: -30,
                   borderRadius: "100%",
                 }}
-                className="hidden group-hover:inline font-semibold ml-3"
+                className="md:hidden group-hover:inline font-semibold md:ml-3"
               >
                 HOME{" "}
               </motion.p>
@@ -37,7 +37,7 @@ function App() {
           <li>
             <a
               href="#about"
-              className="flex justify-center items-center hover w-36 h-12 hover:bg-cubeBlue rounded-lg duration-100"
+              className="flex flex-col md:flex-row justify-center items-center hover w-20 md:w-36 h-16 hover:bg-cubeBlue rounded-lg duration-100"
             >
               <motion.img
                 whileHover={{ scale: 1.2, rotate: 180 }}
@@ -51,7 +51,7 @@ function App() {
                   rotate: -30,
                   borderRadius: "100%",
                 }}
-                className="hidden group-hover:inline font-semibold ml-3"
+                className="md:hidden group-hover:inline font-semibold md:ml-3"
               >
                 ABOUT{" "}
               </motion.p>
@@ -60,7 +60,7 @@ function App() {
           <li>
             <a
               href="#skills"
-              className="flex justify-center items-center hover w-36 h-12 hover:bg-cubeBlue rounded-lg duration-100"
+              className="flex flex-col md:flex-row justify-center items-center hover w-20 md:w-36 h-16 hover:bg-cubeBlue rounded-lg duration-100"
             >
               <motion.img
                 whileHover={{ scale: 1.2, rotate: 180 }}
@@ -74,7 +74,7 @@ function App() {
                   rotate: -30,
                   borderRadius: "100%",
                 }}
-                className="hidden group-hover:inline font-semibold ml-3"
+                className="md:hidden group-hover:inline font-semibold md:ml-3"
               >
                 SKILLS{" "}
               </motion.p>
@@ -83,7 +83,7 @@ function App() {
           <li>
             <a
               href="#work"
-              className="flex justify-center items-center hover w-36 h-12 hover:bg-cubeBlue rounded-lg duration-100"
+              className="flex flex-col md:flex-row justify-center items-center hover w-20 md:w-36 h-16 hover:bg-cubeBlue rounded-lg duration-100"
             >
               <motion.img
                 whileHover={{ scale: 1.2, rotate: 180 }}
@@ -97,7 +97,7 @@ function App() {
                   rotate: -30,
                   borderRadius: "100%",
                 }}
-                className="hidden group-hover:inline font-semibold ml-3"
+                className="md:hidden group-hover:inline font-semibold md:ml-3"
               >
                 WORK{" "}
               </motion.p>
@@ -106,7 +106,7 @@ function App() {
           <li>
             <a
               href="#contact"
-              className="flex justify-center items-center hover w-36 h-12 hover:bg-cubeBlue rounded-lg duration-100"
+              className="hidden md:flex flex-col md:flex-row justify-center items-center hover w-24 md:w-36 h-12 hover:bg-cubeBlue rounded-lg duration-100"
             >
               <motion.img
                 whileHover={{ scale: 1.2, rotate: 180 }}
@@ -120,7 +120,7 @@ function App() {
                   rotate: -30,
                   borderRadius: "100%",
                 }}
-                className="hidden group-hover:inline font-semibold ml-3"
+                className="md:hidden group-hover:inline font-semibold md:ml-3"
               >
                 CONTACT{" "}
               </motion.p>
@@ -130,7 +130,7 @@ function App() {
       </nav>
       <div className="ml-0 md:ml-28">
         <div id="home" className="flex justify-center w-full h-screen">
-          <div className="flex flex-col md:flex-row justify-center items-center w-full">
+          <div className="flex flex-col md:flex-row justify-center items-center w-full mt-28">
             <div className="flex w-1/2 justify-center items-center ">
               <img
                 className="rounded-full w-50 h-50 md:w-80 md:h-80"
@@ -189,7 +189,7 @@ function App() {
 
         <div
           id="about"
-          className="flex flex-col justify-center items-center  w-full p-10 md:p-20"
+          className="flex flex-col justify-center items-center w-full p-10 md:p-20"
         >
           <h2 className="flex w-full text-2xl mb-4 font-Roboto font-semibold">
             {" "}
