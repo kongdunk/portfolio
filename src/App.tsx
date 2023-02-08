@@ -134,8 +134,9 @@ function App() {
             <div className="flex w-1/2 justify-center items-center ">
               <img
                 className="rounded-full w-50 h-50 md:w-80 md:h-80"
-                src="/profilePicture.jpg"
-                alt="image of a cute dog with a hat and a monocle"
+                src="/profilePicture.webp"
+                alt="young male asian adult"
+                loading="eager"
               />
             </div>
             <div className="flex flex-col w-1/2 justify-center mt-5 md:mt-0">
@@ -274,7 +275,8 @@ function App() {
               <img
                 className="flex rounded-lg md:w-2/5"
                 src="pathfinders.png"
-                alt=""
+                loading="lazy"
+                alt="screenshot of a website where you can upload text files and adjust it's text settings"
                 srcSet=""
               />
               <div className=" w-full md:w-1/2 mt-5 ">
@@ -323,7 +325,8 @@ function App() {
               <img
                 className="flex rounded-lg md:w-2/5"
                 src="beequizapp.png"
-                alt=""
+                loading="lazy"
+                alt="Screenshots of a quiz app about bees"
                 srcSet=""
               />
               <div className=" w-full md:w-1/2 mt-5 ">
@@ -370,8 +373,9 @@ function App() {
               <img
                 className="flex rounded-lg md:w-2/5"
                 src="blackjack.png"
-                alt=""
+                alt="screenshot of a black jack card game website"
                 srcSet=""
+                loading="lazy"
               />
               <div className="w-full md:w-1/2 mt-5">
                 <h3 className="font-Roboto text-2xl font-semibold ">
