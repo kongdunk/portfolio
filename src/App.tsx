@@ -6,11 +6,11 @@ import { motion } from "framer-motion";
 function App() {
   return (
     <div className="overflow-hidden bg-bgWhite">
-      <nav className="group bg-sideBarGreen h-1/7 pb-4 md:h-screen text-white w-full md:w-28 md:hover:w-52 fixed top-0 left-0 duration-300 z-1 md:inline">
+      <nav className="group bg-sideBarGreen pb-4 h-20 md:h-screen text-white w-full md:w-28 md:hover:w-52 fixed top-0 left-0 duration-300 z-1 md:inline">
         <div className="bg-cubeBlue w-full h-28 hidden md:flex justify-center items-center">
           <motion.p className=" text-5xl ">Dk</motion.p>
         </div>
-        <ul className="flex md:flex-col justify-evenly md:justify-between items-center mt-5 md:mt-28 h-2/5">
+        <ul className="flex md:flex-col justify-evenly md:justify-between items-center mt-7 md:mt-28 h-2/5">
           <li>
             <a
               href="#home"
@@ -130,7 +130,7 @@ function App() {
       </nav>
       <div className="ml-0 md:ml-28">
         <div id="home" className="flex justify-center w-full h-screen">
-          <div className="flex flex-col md:flex-row justify-center items-center w-full mt-28">
+          <div className="flex flex-col md:flex-row justify-center items-center w-full mt-32 md:mt-0">
             <div className="flex w-1/2 justify-center items-center ">
               <img
                 className="rounded-full w-50 h-50 md:w-80 md:h-80"
