@@ -159,7 +159,7 @@ function App() {
               <div className="flex justify-center md:justify-between mr-0 md:mr-52 mt-5">
                 <a
                   className="flex justify-center items-center bg-sideBarGreen px-9 py-2 text-white rounded-3xl ml-5 font-semibold"
-                  href="/resume_daesan.pdf"
+                  href="/Daesan_Kim_Resume.pdf"
                   target="_blank"
                 >
                   {" "}
@@ -197,13 +197,13 @@ function App() {
             ABOUT ME{" "}
           </h2>
           <p className=" text-base md:text-xl p-10 rounded-3xl bg-white font-Roboto leading-9">
-            I'm an aspiring frontend developer with a passion in learning. My 15
-            years of being a PC gamer has given me a strong foundation to become
-            a computer wizard. I'm currently a student at BCIT taking the
+            I'm an aspiring frontend developer with a passion for learning. My
+            15 years of being a PC gamer has given me a strong foundation to
+            become a computer wizard. I'm currently a student at BCIT taking the
             Digital Design and Development program. This program has taught me a
             lot about UX Design and frontend development. But my interest lean
-            towards frontend developemnt as I am passionate about coding and
-            problem solving. As I come close to finishing my education, I'm
+            towards frontend development as I am passionate about programming
+            and problem solving. As I come close to finishing my education, I'm
             excited to start my journey as a frontend developer.
           </p>
         </div>
@@ -270,7 +270,71 @@ function App() {
             {" "}
             PROJECTS{" "}
           </h2>
+
           <div className="flex justify-center text-2xl p-10 rounded-3xl bg-white flex-wrap min-w-full">
+            <div className="flex flex-col md:flex-row justify-between items-center w-11/12 mt-8 border-2 rounded-2xl border-bgWhite p-3 md:p-8">
+              <div className="flex flex-col rounded-lg md:w-2/5">
+                <img
+                  className=" mb-5"
+                  src="burgerplanet.png"
+                  loading="lazy"
+                  alt="Image of a globe with a text that says burger planet."
+                  srcSet=""
+                />
+                <img
+                  src="burgerplanet2.png"
+                  loading="lazy"
+                  alt="Image of a hamburger and various buttons."
+                  srcSet=""
+                />
+              </div>
+              <div className=" w-full md:w-1/2 mt-5 ">
+                <h3 className="font-Roboto text-2xl font-semibold">
+                  {" "}
+                  Burger Planet
+                </h3>
+                <h2 className="font-Roboto text-xl leading-10">
+                  {" "}
+                  Technologies Used:
+                  <span className=" text-cubeBlue font-semibold">
+                    {" "}
+                    React , React Three Fiber{" "}
+                  </span>
+                </h2>
+                <ul>
+                  <li className="font-Roboto text-base list-disc list-outside mb-2 ml-4">
+                    Built dynamic reusable components for 3D alphabet character
+                    mesh models
+                  </li>
+                  <li className="font-Roboto text-base list-disc list-outside mb-2 ml-4">
+                    Created various interactions with 3D models such as
+                    interaction on scroll and interaction on click using react
+                    hooks and react three fiber library
+                  </li>
+                  <li className="font-Roboto text-base list-disc list-outside mb-2 ml-4">
+                    Edited gltf files using blender to customize and edit 3D
+                    models for a smoother development of interactions
+                  </li>
+                </ul>
+                <div className="flex justify-end">
+                  <a
+                    className=" mr-4 underline font-Roboto text-lg"
+                    href="https://burgerplanet.vercel.app/"
+                    target="_blank"
+                  >
+                    Live
+                  </a>
+                  <a
+                    className="mr-4 underline font-Roboto text-lg"
+                    href="https://github.com/kongdunk/burgerplanet"
+                    target="_blank"
+                  >
+                    Repo
+                  </a>
+                </div>
+              </div>
+            </div>
+
             <div className="flex flex-col md:flex-row justify-between items-center w-11/12 mt-8 border-2 rounded-2xl border-bgWhite p-3 md:p-8">
               <img
                 className="flex rounded-lg md:w-2/5"
@@ -288,19 +352,26 @@ function App() {
                   {" "}
                   Technologies Used:{" "}
                   <span className=" text-cubeBlue font-semibold leading-10 mb-2">
-                    NEXT, Storybook
+                    NEXT Js, Storybook
                   </span>{" "}
                 </h2>
                 <ul>
                   <li className="font-Roboto text-base list-disc list-outside mb-2 ml-4">
-                    Web app that helps people with accessibility issues access
-                    documents online by adjusting text settings
+                    A web app that helps people with accessibility issues access
+                    documents online by adjusting text settings in a document
                   </li>
                   <li className="font-Roboto text-base list-disc list-outside mb-2 ml-4">
-                    Built with hooks and functional components
+                    Built functional components and various ui components from
+                    mock up designs provided by designers in React using styled
+                    components and framer motion library
                   </li>
                   <li className="font-Roboto text-base list-disc list-outside mb-2 ml-4">
-                    Used Storybook for building UI components
+                    Used Storybook for ui development to create and test
+                    components
+                  </li>
+                  <li className="font-Roboto text-base list-disc list-outside mb-2 ml-4">
+                    Took part in weekly stand ups to highlight each other’s
+                    progress and and roadblocks
                   </li>
                 </ul>
                 <div className="flex justify-end">
@@ -321,54 +392,7 @@ function App() {
                 </div>
               </div>
             </div>
-            <div className="flex flex-col md:flex-row justify-between items-center w-11/12 mt-8 border-2 rounded-2xl border-bgWhite p-3 md:p-8">
-              <img
-                className="flex rounded-lg md:w-2/5"
-                src="beequizapp.png"
-                loading="lazy"
-                alt="Screenshots of a quiz app about bees"
-                srcSet=""
-              />
-              <div className=" w-full md:w-1/2 mt-5 ">
-                <h3 className="font-Roboto text-2xl font-semibold">
-                  {" "}
-                  Bee Quiz App
-                </h3>
-                <h2 className="font-Roboto text-xl leading-10">
-                  {" "}
-                  Technologies Used:
-                  <span className=" text-cubeBlue font-semibold">
-                    {" "}
-                    NEXT, Next Router{" "}
-                  </span>
-                </h2>
-                <ul>
-                  <li className="font-Roboto text-base list-disc list-outside mb-2 ml-4">
-                    Interactive Quiz App about Bees
-                  </li>
-                  <li className="font-Roboto text-base list-disc list-outside mb-2 ml-4">
-                    Used Next Router to create client-side route transitions
-                    between pages
-                  </li>
-                </ul>
-                <div className="flex justify-end">
-                  <a
-                    className=" mr-4 underline font-Roboto text-lg"
-                    href="https://bruhhh-six.vercel.app/"
-                    target="_blank"
-                  >
-                    Live
-                  </a>
-                  <a
-                    className="mr-4 underline font-Roboto text-lg"
-                    href="https://github.com/daesanTheRiceologist/bruhhh"
-                    target="_blank"
-                  >
-                    Repo
-                  </a>
-                </div>
-              </div>
-            </div>
+
             <div className="flex flex-col md:flex-row justify-between items-center w-11/12 mt-8 border-2 rounded-2xl border-bgWhite p-3 md:p-8">
               <img
                 className="flex rounded-lg md:w-2/5"
@@ -391,10 +415,16 @@ function App() {
                 </h2>
                 <ul>
                   <li className="font-Roboto text-base list-disc list-outside mb-2 ml-4">
-                    Built with React hooks
+                    Built with React hooks to manage cards in player and dealer
+                    hands
                   </li>
                   <li className="font-Roboto text-base list-disc list-outside mb-2 ml-4">
-                    Cards data pulled from Deck of Cards API{" "}
+                    Uses Deck of Cards API to generate deck keys and to shuffle
+                    deck of cards randomly
+                  </li>
+                  <li className="font-Roboto text-base list-disc list-outside mb-2 ml-4">
+                    Designed and built UI components and micro animations with
+                    framer motion
                   </li>
                 </ul>
                 <div className="flex justify-end">
@@ -446,13 +476,10 @@ function App() {
             </div>
             <div className="flex flex-col justify-center items-center w-full md:w-5/12 mt-8 border-2 rounded-2xl border-bgWhite p-16">
               {" "}
-              <motion.div
-                whileHover={{ scale: 1.2 }}
-                className="flex flex-col justify-center items-center w-28 h-28 border-2 rounded-2xl border-bgWhite m-3"
-              >
+              <div className="flex flex-col justify-center items-center w-28 h-28 border-2 rounded-2xl border-bgWhite m-3">
                 <img className="w-16" src="email.svg" />
                 <h3 className="text-base"> Email </h3>
-              </motion.div>
+              </div>
               <h4 className="font-Roboto text-sm md:text-lg">
                 {" "}
                 daesan98@gmail.com{" "}
