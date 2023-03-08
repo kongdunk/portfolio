@@ -133,10 +133,9 @@ function App() {
           <div className="flex flex-col md:flex-row justify-center items-center w-full mt-32 md:mt-0">
             <div className="flex w-1/2 justify-center items-center ">
               <img
-                className="rounded-full w-50 h-50 md:w-80 md:h-80"
-                src="/profilePicture.webp"
+                className="rounded-full "
+                src="/characterillustration.svg"
                 alt="young male asian adult"
-                loading="eager"
               />
             </div>
             <div className="flex flex-col w-1/2 justify-center mt-5 md:mt-0">
@@ -148,7 +147,7 @@ function App() {
                 {" "}
                 daesan.{" "}
               </h1>
-              <p className="text-lg mt-3 mb-3 m-0 md:mr-52 font-Roboto font-medium">
+              <p className="text-lg mt-3 mb-3 m-0 lg:mr-52 font-Roboto font-medium">
                 {" "}
                 A{" "}
                 <span className=" text-cubeBlue font-semibold">
@@ -277,13 +276,11 @@ function App() {
                 <img
                   className=" mb-5"
                   src="burgerplanet.png"
-                  loading="lazy"
                   alt="Image of a globe with a text that says burger planet."
                   srcSet=""
                 />
                 <img
                   src="burgerplanet2.png"
-                  loading="lazy"
                   alt="Image of a hamburger and various buttons."
                   srcSet=""
                 />
@@ -339,7 +336,6 @@ function App() {
               <img
                 className="flex rounded-lg md:w-2/5"
                 src="pathfinders.png"
-                loading="lazy"
                 alt="screenshot of a website where you can upload text files and adjust it's text settings"
                 srcSet=""
               />
@@ -399,7 +395,6 @@ function App() {
                 src="blackjack.png"
                 alt="screenshot of a black jack card game website"
                 srcSet=""
-                loading="lazy"
               />
               <div className="w-full md:w-1/2 mt-5">
                 <h3 className="font-Roboto text-2xl font-semibold ">
