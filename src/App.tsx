@@ -367,7 +367,7 @@ function App() {
                   </li>
                   <li className="font-Roboto text-base list-disc list-outside mb-2 ml-4">
                     Took part in weekly stand ups to highlight each other’s
-                    progress and and roadblocks
+                    progress and roadblocks
                   </li>
                 </ul>
                 <div className="flex justify-end">
