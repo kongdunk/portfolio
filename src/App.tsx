@@ -5,8 +5,15 @@ import { motion } from "framer-motion";
 
 function App() {
   return (
-    <div className="overflow-hidden bg-bgWhite">
-      <nav className="group bg-sideBarGreen pb-4 h-20 md:h-screen text-white w-full md:w-28 md:hover:w-52 fixed top-0 left-0 duration-300 z-1 md:inline">
+    <main className="overflow-hidden bg-bgWhite">
+      <motion.nav
+        initial={{ x: -120 }}
+        animate={{ x: 0 }}
+        transition={{
+          default: { ease: "linear" },
+        }}
+        className="group bg-sideBarGreen pb-4 h-20 md:h-screen text-white w-full md:w-28 md:hover:w-52 fixed top-0 left-0 duration-300 z-1 md:inline z-30"
+      >
         <div className="bg-cubeBlue w-full h-28 hidden md:flex justify-center items-center">
           <motion.p className=" text-5xl ">Dk</motion.p>
         </div>
@@ -127,34 +134,54 @@ function App() {
             </a>
           </li>
         </ul>
-      </nav>
+      </motion.nav>
       <div className="ml-0 md:ml-28">
         <div id="home" className="flex justify-center w-full h-screen">
           <div className="flex flex-col md:flex-row justify-center items-center w-full mt-32 md:mt-0">
-            <div className="flex w-1/2 justify-center items-center ">
+            <motion.div
+              initial={{ x: -600 }}
+              animate={{ x: 0 }}
+              transition={{ ease: "easeInOut", duration: 1.5 }}
+              className="flex w-1/2 justify-center items-center "
+            >
               <img
                 className="rounded-full "
                 src="/characterillustration.svg"
                 alt="young male asian adult"
               />
-            </div>
+            </motion.div>
             <div className="flex flex-col w-1/2 justify-center mt-5 md:mt-0">
-              <h2 className="text-xl font-semibold font-Roboto">
+              <motion.h2
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 1, delay: 0.25 }}
+                className="text-xl font-semibold font-Roboto"
+              >
                 {" "}
                 HI THERE 👋 I'M{" "}
-              </h2>
-              <h1 className="text-6xl md:text-8xl mt-3 mb-3 font-Roboto font-extrabold">
+              </motion.h2>
+              <motion.h1
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 100 }}
+                transition={{ duration: 1, delay: 0.5 }}
+                className="text-6xl md:text-8xl mt-3 mb-3 font-Roboto font-extrabold"
+              >
                 {" "}
                 daesan.{" "}
-              </h1>
-              <p className="text-lg mt-3 mb-3 m-0 lg:mr-52 font-Roboto font-medium">
+              </motion.h1>
+              <motion.p
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 100 }}
+                transition={{ duration: 1, delay: 0.75 }}
+                className="text-lg mt-3 mb-3 m-0 lg:mr-52 font-Roboto font-medium"
+              >
                 {" "}
                 A{" "}
                 <span className=" text-cubeBlue font-semibold">
                   Front-End Web Developer
                 </span>{" "}
                 that has a passion for development and problem solving 💻
-              </p>
+              </motion.p>
               <div className="flex justify-center md:justify-between mr-0 md:mr-52 mt-5">
                 <a
                   className="flex justify-center items-center bg-sideBarGreen px-9 py-2 text-white rounded-3xl ml-5 font-semibold"
@@ -483,7 +510,7 @@ function App() {
           </div>
         </div>
       </div>
-    </div>
+    </main>
   );
 }
 
