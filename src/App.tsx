@@ -1,9 +1,10 @@
 import { useState } from "react";
 import reactLogo from "./assets/react.svg";
 import "./App.css";
-import { motion } from "framer-motion";
+import { delay, motion, useScroll } from "framer-motion";
 
 function App() {
+  const { scrollYProgress } = useScroll();
   return (
     <main className="overflow-hidden bg-bgWhite">
       <motion.nav
@@ -136,7 +137,7 @@ function App() {
         </ul>
       </motion.nav>
       <div className="ml-0 md:ml-28">
-        <div id="home" className="flex justify-center w-full h-screen">
+        <div id="home" className="flex justify-center w-full h-screen mb-2">
           <div className="flex flex-col md:flex-row justify-center items-center w-full mt-32 md:mt-0">
             <motion.div
               initial={{ x: -600 }}
@@ -183,16 +184,21 @@ function App() {
                 that has a passion for development and problem solving 💻
               </motion.p>
               <div className="flex justify-center md:justify-between mr-0 md:mr-52 mt-5">
-                <a
+                <motion.a
+                  initial={{ scale: 0 }}
+                  animate={{ scale: 1 }}
+                  transition={{ delay: 0.2 }}
                   className="flex justify-center items-center bg-sideBarGreen px-9 py-2 text-white rounded-3xl ml-5 font-semibold"
                   href="/Daesan_Kim_Resume.pdf"
                   target="_blank"
                 >
                   {" "}
                   Resume{" "}
-                </a>
+                </motion.a>
                 <div className="flex items-center w-full justify-end mr-0 md:mr-20">
                   <motion.a
+                    initial={{ scale: 0 }}
+                    animate={{ scale: 1, transition: { delay: 0.25 } }}
                     whileHover={{ scale: 1.2 }}
                     href="https://www.linkedin.com/in/daesan-kim/"
                     target="_blank"
@@ -201,6 +207,9 @@ function App() {
                     <img className="w-8" src="linkedin.svg" />
                   </motion.a>
                   <motion.a
+                    initial={{ scale: 0 }}
+                    animate={{ scale: 1 }}
+                    transition={{ delay: 0.1 }}
                     whileHover={{ scale: 1.2 }}
                     href="https://github.com/kongdunk"
                     target="_blank"
@@ -214,7 +223,9 @@ function App() {
           </div>
         </div>
 
-        <div
+        <motion.div
+          initial={{ y: "20vh", opacity: 0 }}
+          whileInView={{ transition: { duration: 1 }, y: 0, opacity: 1 }}
           id="about"
           className="flex flex-col justify-center items-center w-full p-10 md:p-20"
         >
@@ -225,16 +236,18 @@ function App() {
           <p className=" text-base md:text-xl p-10 rounded-3xl bg-white font-Roboto leading-9">
             I'm an aspiring frontend developer with a passion for learning. My
             15 years of being a PC gamer has given me a strong foundation to
-            become a computer wizard. I'm currently a student at BCIT taking the
+            become a computer wizard.I'm currently a student at BCIT taking the
             Digital Design and Development program. This program has taught me a
             lot about UX Design and frontend development. But my interest lean
             towards frontend development as I am passionate about programming
             and problem solving. As I come close to finishing my education, I'm
             excited to start my journey as a frontend developer.
           </p>
-        </div>
+        </motion.div>
 
-        <div
+        <motion.div
+          initial={{ y: "20vh", opacity: 0 }}
+          whileInView={{ transition: { duration: 1 }, y: 0, opacity: 1 }}
           id="skills"
           className="flex flex-col justify-center items-center w-full p-10 md:p-20"
         >
@@ -286,9 +299,11 @@ function App() {
               <h3 className="text-sm md:text-base"> TailwindCSS </h3>
             </motion.div>
           </div>
-        </div>
+        </motion.div>
 
-        <div
+        <motion.div
+          initial={{ y: "20vh", opacity: 0 }}
+          whileInView={{ transition: { duration: 1 }, y: 0, opacity: 1 }}
           id="work"
           className="flex flex-col justify-center items-center w-full p-10 md:p-20"
         >
@@ -468,9 +483,11 @@ function App() {
               </div>
             </div>
           </div>
-        </div>
+        </motion.div>
 
-        <div
+        <motion.div
+          initial={{ y: "20vh", opacity: 0 }}
+          whileInView={{ transition: { duration: 1 }, y: 0, opacity: 1 }}
           id="contact"
           className="flex flex-col justify-center items-center w-full p-10 md:p-20"
         >
@@ -508,7 +525,7 @@ function App() {
               </h4>
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
     </main>
   );
