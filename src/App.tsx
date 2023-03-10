@@ -272,7 +272,7 @@ function App() {
             {" "}
             ABOUT ME{" "}
           </h2>
-          <p className=" text-base md:text-xl p-10 rounded-3xl bg-white font-Roboto dark:text-white dark:bg-bgThirdBlack leading-9">
+          <p className=" text-base md:text-xl p-5 sm:p-10 rounded-3xl bg-white font-Roboto dark:text-white dark:bg-bgThirdBlack leading-9">
             I'm an aspiring frontend developer with a passion for learning. My
             15 years of being a PC gamer has given me a strong foundation to
             become a computer wizard.I'm currently a student at BCIT taking the
@@ -351,22 +351,23 @@ function App() {
             PROJECTS{" "}
           </h2>
 
-          <div className="flex justify-center text-2xl p-10 rounded-3xl bg-white flex-wrap min-w-full dark:bg-bgThirdBlack dark:text-white">
-            <div className="flex flex-col md:flex-row justify-between items-center w-11/12 mt-8 border-2 rounded-2xl border-bgWhite p-3 md:p-8 dark:border-bgSecondaryBlack dark:bg-bgSecondaryBlack">
-              <div className="flex flex-col rounded-lg md:w-2/5">
+          <div className="flex justify-center text-2xl md:p-10 rounded-3xl bg-white flex-wrap min-w-full dark:bg-bgThirdBlack dark:text-white">
+            <div className="flex flex-col lg:flex-row justify-between items-center w-11/12 mt-4 md:mt-8 border-2 rounded-2xl border-bgWhite p-3 md:p-8 dark:border-bgSecondaryBlack dark:bg-bgSecondaryBlack">
+              <div className="flex flex-col rounded-lg lg:w-2/5">
                 <img
-                  className=" mb-5"
+                  className=" mb-5 rounded-lg"
                   src="burgerplanet.png"
                   alt="Image of a globe with a text that says burger planet."
                   srcSet=""
                 />
                 <img
+                  className="rounded-lg"
                   src="burgerplanet2.png"
                   alt="Image of a hamburger and various buttons."
                   srcSet=""
                 />
               </div>
-              <div className=" w-full md:w-1/2 mt-5 ">
+              <div className=" w-full lg:w-1/2 mt-5 ">
                 <h3 className="font-Roboto text-2xl font-semibold">
                   {" "}
                   Burger Planet
@@ -413,14 +414,14 @@ function App() {
               </div>
             </div>
 
-            <div className="flex flex-col md:flex-row justify-between items-center w-11/12 mt-8 border-2 rounded-2xl border-bgWhite p-3 md:p-8 dark:border-bgSecondaryBlack dark:bg-bgSecondaryBlack">
+            <div className="flex flex-col lg:flex-row justify-between items-center w-11/12 mt-8 border-2 rounded-2xl border-bgWhite p-3 md:p-8 dark:border-bgSecondaryBlack dark:bg-bgSecondaryBlack">
               <img
-                className="flex rounded-lg md:w-2/5"
+                className="flex rounded-lg lg:w-2/5"
                 src="pathfinders.png"
                 alt="screenshot of a website where you can upload text files and adjust it's text settings"
                 srcSet=""
               />
-              <div className=" w-full md:w-1/2 mt-5 ">
+              <div className=" w-full lg:w-1/2 mt-5 ">
                 <h3 className="font-Roboto text-2xl font-semibold">
                   {" "}
                   Pathfinders
@@ -470,15 +471,15 @@ function App() {
               </div>
             </div>
 
-            <div className="flex flex-col md:flex-row justify-between items-center w-11/12 mt-8 border-2 rounded-2xl border-bgWhite p-3 md:p-8 dark:border-bgSecondaryBlack dark:bg-bgSecondaryBlack">
+            <div className="flex flex-col lg:flex-row justify-between items-center w-11/12 mt-8 border-2 rounded-2xl border-bgWhite p-3 md:p-8 dark:border-bgSecondaryBlack dark:bg-bgSecondaryBlack">
               <img
-                className="flex rounded-lg md:w-2/5"
+                className="flex rounded-lg lg:w-2/5"
                 src="blackjack.png"
                 dark:bg-bgSecondaryBlack
                 alt="screenshot of a black jack card game website"
                 srcSet=""
               />
-              <div className="w-full md:w-1/2 mt-5">
+              <div className="w-full lg:w-1/2 mt-5">
                 <h3 className="font-Roboto text-2xl font-semibold ">
                   {" "}
                   Black Jack Card Game
