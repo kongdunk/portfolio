@@ -4,6 +4,7 @@ module.exports = {
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
+  darkMode: "class",
   theme: {
     colors: {
       // ...
@@ -22,6 +23,18 @@ module.exports = {
       'bgWhite': {
         DEFAULT: '#F7F7F7',
       },
+      'bgBlack': {
+        DEFAULT: '#111111',
+      },
+      'bgSecondaryBlack': {
+        DEFAULT: '#3a3a3a',
+      },
+      'bgThirdBlack': {
+        DEFAULT: '#303030',
+      },
+      'aquaBlue': {
+        DEFAULT: '#35b7ff',
+      }
     },
     extend: {
       fontFamily: {
