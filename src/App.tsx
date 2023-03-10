@@ -471,7 +471,7 @@ function App() {
               </div>
             </div>
 
-            <div className="flex flex-col lg:flex-row justify-between items-center w-11/12 mt-8 border-2 rounded-2xl border-bgWhite p-3 md:p-8 dark:border-bgSecondaryBlack dark:bg-bgSecondaryBlack">
+            <div className="flex flex-col lg:flex-row justify-between items-center w-11/12 mt-8 border-2 rounded-2xl border-bgWhite p-3 md:p-8 dark:border-bgSecondaryBlack dark:bg-bgSecondaryBlack mb-4">
               <img
                 className="flex rounded-lg lg:w-2/5"
                 src="blackjack.png"
@@ -479,7 +479,7 @@ function App() {
                 alt="screenshot of a black jack card game website"
                 srcSet=""
               />
-              <div className="w-full lg:w-1/2 mt-5">
+              <div className="w-full md:w-1/2 mt-5">
                 <h3 className="font-Roboto text-2xl font-semibold ">
                   {" "}
                   Black Jack Card Game
