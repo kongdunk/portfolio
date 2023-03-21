@@ -185,7 +185,7 @@ function App() {
               className="flex w-5/6 md:w-1/2 justify-center items-center "
             >
               <img
-                className="rounded-full "
+                className="rounded-full"
                 src="/characterillustration.svg"
                 alt="young male asian adult studying on a desk with a computer"
               />
@@ -263,7 +263,7 @@ function App() {
         </div>
 
         <motion.div
-          initial={{ y: "20vh", opacity: 0 }}
+          initial={{ y: "5vh", opacity: 0 }}
           whileInView={{ transition: { duration: 1 }, y: 0, opacity: 1 }}
           id="about"
           className="flex flex-col justify-center items-center w-full p-10 md:p-20 pt-28"
@@ -285,7 +285,7 @@ function App() {
         </motion.div>
 
         <motion.div
-          initial={{ y: "20vh", opacity: 0 }}
+          initial={{ y: "5vh", opacity: 0 }}
           whileInView={{ transition: { duration: 1 }, y: 0, opacity: 1 }}
           id="skills"
           className="flex flex-col justify-center items-center w-full p-10 md:p-20 dark:text-white"
@@ -341,7 +341,7 @@ function App() {
         </motion.div>
 
         <motion.div
-          initial={{ y: "20vh", opacity: 0 }}
+          initial={{ y: "5vh", opacity: 0 }}
           whileInView={{ transition: { duration: 1 }, y: 0, opacity: 1 }}
           id="work"
           className="flex flex-col justify-center items-center w-full p-10 md:p-20"
@@ -352,6 +352,73 @@ function App() {
           </h2>
 
           <div className="flex justify-center text-2xl md:p-10 rounded-3xl bg-white flex-wrap min-w-full dark:bg-bgThirdBlack dark:text-white">
+            <div className="flex flex-col lg:flex-row justify-between items-center w-11/12 mt-4 md:mt-8 border-2 rounded-2xl border-bgWhite p-3 md:p-8 dark:border-bgSecondaryBlack dark:bg-bgSecondaryBlack">
+              <div className="flex flex-col rounded-lg lg:w-2/5">
+                <img
+                  className=" mb-5 rounded-lg"
+                  src="travelgenie.png"
+                  alt="Image of a globe with a text that says burger planet."
+                  srcSet=""
+                />
+                <img
+                  className="rounded-lg"
+                  src="travelgenie2.png"
+                  alt="Image of a hamburger and various buttons."
+                  srcSet=""
+                />
+                <img
+                  className="rounded-lg"
+                  src="travelgenie3.png"
+                  alt="Image of a hamburger and various buttons."
+                  srcSet=""
+                />
+              </div>
+              <div className=" w-full lg:w-1/2 mt-5 ">
+                <h3 className="font-Roboto text-2xl font-semibold">
+                  {" "}
+                  Travel Genie
+                </h3>
+                <h2 className="font-Roboto text-xl leading-10">
+                  {" "}
+                  Technologies Used:
+                  <span className=" text-cubeBlue font-semibold dark:text-aquaBlue">
+                    {" "}
+                    Next js , Prisma, PostgreSQL, TailwindCSS{" "}
+                  </span>
+                </h2>
+                <ul>
+                  <li className="font-Roboto text-base list-disc list-outside mb-2 ml-4">
+                    Built a web app that allows users to create, read, update,
+                    and delete their travel stories.
+                  </li>
+                  <li className="font-Roboto text-base list-disc list-outside mb-2 ml-4">
+                    Used next auth to authenticate user logins and add user
+                    details to store in database
+                  </li>
+                  <li className="font-Roboto text-base list-disc list-outside mb-2 ml-4">
+                    Used Prisma with Next.js to persist data to a PostgreSQL
+                    database
+                  </li>
+                </ul>
+                <div className="flex justify-end">
+                  <a
+                    className=" mr-4 underline font-Roboto text-lg"
+                    href="https://travelgenie.vercel.app/"
+                    target="_blank"
+                  >
+                    Live
+                  </a>
+                  <a
+                    className="mr-4 underline font-Roboto text-lg"
+                    href="https://github.com/kongdunk/travelgenie"
+                    target="_blank"
+                  >
+                    Repo
+                  </a>
+                </div>
+              </div>
+            </div>
+
             <div className="flex flex-col lg:flex-row justify-between items-center w-11/12 mt-4 md:mt-8 border-2 rounded-2xl border-bgWhite p-3 md:p-8 dark:border-bgSecondaryBlack dark:bg-bgSecondaryBlack">
               <div className="flex flex-col rounded-lg lg:w-2/5">
                 <img
@@ -527,7 +594,7 @@ function App() {
         </motion.div>
 
         <motion.div
-          initial={{ y: "20vh", opacity: 0 }}
+          initial={{ y: "5vh", opacity: 0 }}
           whileInView={{ transition: { duration: 1 }, y: 0, opacity: 1 }}
           id="contact"
           className="flex flex-col justify-center items-center w-full p-10 md:p-20 dark:text-white"
